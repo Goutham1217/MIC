@@ -5,6 +5,7 @@ import datetime
 import wikipedia
 import pyjokes
 import requests
+
 def talk(text):
     engine.say(text)
     engine.runAndWait()
@@ -12,6 +13,7 @@ listener = sr.Recognizer()
 engine = pyttsx3.init()
 voices = engine.getProperty("voices")
 engine.setProperty("voices",voices[1].id)
+
 def run_venom():
     import time
     try:
